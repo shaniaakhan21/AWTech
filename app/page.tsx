@@ -5,7 +5,7 @@ import TopHeader from "@/components/TopHeader";
 export default function Home() {
   return (
     <div>
-      <TopHeader/>
+      <TopHeader />
       <Header />
       <HeroSection
         title="LET'S GET TO WORK"
