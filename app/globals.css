@@ -6,3 +6,24 @@
 body{
   font-family: 'Outfit', sans-serif;
 }
+
+
+.MuiAccordion-heading, .MuiAccordion-root, 
+.Mui-expanded:last-of-type {
+  border-radius: 1rem!important;
+  --Paper-shadow: none!important;
+  border: 1px solid #ADADAD;
+}
+
+.MuiAccordion-root:first-of-type {
+  border-top-left-radius: 1rem!important;
+  border-top-right-radius: 1rem!important;
+}
+
+.Mui-expanded:first-of-type, .MuiAccordionSummary-root{
+  border-radius: 1rem!important;
+}
+
+.MuiAccordion-root::before {
+  background-color: transparent;
+}
