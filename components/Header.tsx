@@ -6,7 +6,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 
 const Header: React.FC = () => {
     return (
-        <AppBar className="bg-white shadow sticky">
+        <AppBar className="bg-[#F9F9F9] shadow-none sticky">
             <Toolbar className="flex flex-col sm:flex-row justify-between items-center py-2">
                 <div className="flex items-center">
                     <Image src={AWLogo} alt="Logo" />
@@ -16,6 +16,7 @@ const Header: React.FC = () => {
                     <Button color="inherit" className='text-black' href="/">Home</Button>
                     <Button color="inherit" className='text-black' href="/about">About</Button>
                     <Button color="inherit" className='text-black' href="/services">Services</Button>
+                    <Button color="inherit" className='text-black' href="/projects">Projects</Button>
                     <Button color="inherit" className='text-black' href="/contact">Contact</Button>
                 </nav>
 

@@ -4,11 +4,12 @@ const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.{html,js}",
-    "./components/**/*.{js,ts,jsx,tsx}", 
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'],
       },
     },
   },
