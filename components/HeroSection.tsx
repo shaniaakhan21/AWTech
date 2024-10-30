@@ -27,10 +27,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonTex
 
                 <div className="flex flex-row justify-between mb-8">
                     <div className="flex flex-row w-8/12">
-                        <Button className="capitalize rounded-full mr-4 w-fit px-4 text-black font-medium bg-[#FFC527] shadow-2xl">
+                        <Button className="capitalize rounded-full mr-4 w-fit px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl">
                             {buttonText1}
                         </Button>
-                        <Button className="capitalize rounded-full w-fit px-4 font-medium text-black font-medium bg-[#F9F9F9] shadow-2xl">
+                        <Button className="capitalize rounded-full w-fit px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
                             {buttonText2}
                         </Button>
                     </div>
