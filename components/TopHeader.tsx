@@ -22,7 +22,7 @@ const TopHeader: React.FC = () => {
                 {/* Right side: Address and email */}
                 <div className="text-white text-sm w-9/12 sm:w-1/2 flex justify-center sm:justify-end">
                     <Typography component="span" className="mr-4 text-[7px] sm:text-xs flex flex-row items-center"><CalendarMonthIcon className='mr-1'/> Opening Hours: 8:00 AM - 7:00 PM</Typography>
-                    <Typography component="span" className="text-[7px] sm:text-xs flex flex-row items-center"><EmailIcon className='mr-1'/> info@awtechnical.com</Typography>
+                    <Typography component="span" className="ml-02 text-[7px] sm:text-xs flex flex-row items-center"><EmailIcon className='mr-1'/> info@awtechnical.com</Typography>
                 </div>
             </Toolbar>
         </AppBar>
