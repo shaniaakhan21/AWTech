@@ -83,7 +83,7 @@ body{
 }
 
 .pos-sticky{
-  position: sticky!important;
+  position: fixed!important;
 }
 
 @media (min-width: 640px) {
