@@ -79,7 +79,7 @@ body{
 }
 
 .pos-relative{
-  position: relative!important;
+  position: hidden!important;
 }
 
 .pos-sticky{
