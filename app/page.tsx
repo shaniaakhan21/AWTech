@@ -7,7 +7,6 @@ import Projects from "@/components/Projects";
 import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Sleek from "@/components/Sleek";
-import TopHeader from "@/components/TopHeader";
 import Why from "@/components/Why";
 
 export default function Home() {
