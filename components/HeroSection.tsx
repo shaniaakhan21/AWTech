@@ -13,24 +13,24 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonText2 }) => {
     return (
         <section
-            className="relative bg-cover bg-center pb-96 pt-32 px-32"
+            className="relative bg-cover bg-center px-0 pb-0 pt-0 sm:pb-96 sm:pt-32 sm:px-32"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}
         >
-            <div className="container w-1/2 pl-4">
-                <div className="text-white mb-8">
-                    <h1 className="text-sm">{title}</h1>
-                    <h2 className="text-5xl font-bold mb-2 py-2">Expertised In All In <br />One Technical Services</h2>
-                    <p className="text-sm mb-8 w-10/12">
+            <div className="container w-full sm:w-1/2 pl-4 bg-[#00000045] sm:bg-transparent px-[4px] pb-20 pt-20 sm:px-0 sm:pb-0 sm:pt-0">
+                <div className="text-white mb-4 sm:mb-8">
+                    <h1 className="text-[8px] sm:text-sm">{title}</h1>
+                    <h2 className="text-xl sm:text-5xl font-bold sm:mb-2 py-2">Expertised In All In <br />One Technical Services</h2>
+                    <p className="text-xs sm:text-sm mb-1 sm:mb-8 w-9/12 sm:w-10/12">
                         AW Technical Service is a committed Facilities Management company responsible for all general building management.
                     </p>
                 </div>
 
-                <div className="flex flex-row justify-between mb-8">
-                    <div className="flex flex-row w-8/12">
-                        <Button className="capitalize rounded-full mr-4 w-fit px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl">
+                <div className="flex flex-row justify-between mb-4 sm:mb-8">
+                    <div className="flex flex-row w-9/12">
+                        <Button className="capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl">
                             {buttonText1}
                         </Button>
-                        <Button className="capitalize rounded-full w-fit px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
+                        <Button className="capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
                             {buttonText2}
                         </Button>
                     </div>
