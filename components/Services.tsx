@@ -38,20 +38,20 @@ const slides = [
 
 const Services: React.FC = () => {
     return (
-        <><div className='px-32 pt-20 pb-60 bg-[#222222]'>
-            <div className='flex flex-row mt-2'>
-                <div className='w-1/2'>
-                    <h1 className='text-white text-5xl font-bold mb-2 border-r border-white'>Ideal Solution For time
+        <><div className='px-2 pb-36 pt-4 sm:px-32 sm:pt-20 sm:pb-60 bg-[#222222]'>
+            <div className='flex flex-col sm:flex-row mt-2'>
+                <div className='w-full sm:w-1/2'>
+                    <h1 className='text-center sm:text-start  text-white text-3xl sm:text-5xl font-bold mb-2 sm:border-r sm:border-white'>Ideal Solution For time
                         consuming problems</h1>
                 </div>
-                <div className='w-1/2'>
-                    <h3 className='text-[#EEEEEE] text-base font-thin ml-8 mt-2'>Volutpat maecenas volutpat blandit aliquam etiam erat. Enim praesent elementum facilisis leo vel fringilla est. Vel elit scelerisque mauris pellentesque. Id ornare arcu odio ut sem. Dapibus ultrices in iaculis nunc sed augue lacus.
+                <div className='w-full sm:w-1/2'>
+                    <h3 className='text-center sm:text-start  text-[#EEEEEE] text-[10px] sm:text-base font-thin ml-8 mt-2 px-2 pb-2 sm:px-0 sm:pb-0'>Volutpat maecenas volutpat blandit aliquam etiam erat. Enim praesent elementum facilisis leo vel fringilla est. Vel elit scelerisque mauris pellentesque. Id ornare arcu odio ut sem. Dapibus ultrices in iaculis nunc sed augue lacus.
                     </h3>
                 </div>
             </div>
         </div>
             <div>
-                <div className='bg-[#F9F9F9] flex justify-end'>
+                <div className='bg-[#F9F9F9] flex justify-center sm:justify-end'>
                     <Carousel slides={slides} />
                 </div>
             </div>
