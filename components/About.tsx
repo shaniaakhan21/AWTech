@@ -53,7 +53,7 @@ const About: React.FC = () => {
                     />
                     <div className='flex flex-row items-center p-4 sm:p-6'>
                         <div className='pr-4 w-5/12 sm:w-4/12'>
-                            <Button className="capitalize rounded-full mr-4 w-full sm:w-fit px-2 text-xs py-2 sm:text-sm sm:px-8 bg-[#222222] font-semibold text-[#F9F9F9] shadow-2xl">
+                            <Button className="custom-button-black capitalize rounded-full mr-4 w-full sm:w-fit px-2 text-xs py-2 sm:text-sm sm:px-8 bg-[#222222] font-semibold text-[#F9F9F9] shadow-2xl">
                                 Read More
                             </Button>
                         </div>

@@ -28,12 +28,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonTex
 
                 <div className="flex flex-row justify-between mb-4 sm:mb-8">
                     <div className="flex flex-row w-9/12">
-                        <Button className="capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
+                        <Button className="custom-button capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
                         onClick={() => window.open('https://wa.me/971557736634', '_blank')}
                         >
                             {buttonText1}
                         </Button>
-                        <Button className="capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
+                        <Button className="custom-button-white capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
                             {buttonText2}
                         </Button>
                     </div>
