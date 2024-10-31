@@ -28,9 +28,11 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 
     // Handlers for mobile
     const handleNextMobile = () => {
-        setCurrentSlide((prevSlide) =>
-            prevSlide < slides.length - 1.5 ? prevSlide + 1 : 0
-        );
+        setCurrentSlide((prevSlide) => {
+            const nextSlide = prevSlide + 1;
+            // Wrap around to the first slide if we exceed the total slides
+            return nextSlide >= slides.length ? 0 : nextSlide;
+        });
     };
 
     const handlePrevMobile = () => {
@@ -51,13 +53,13 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
     };
 
     // Auto-change slides every 2 seconds
-    useEffect(() => {
-        const interval = setInterval(
-            isMobile ? handleNextMobile : handleNextDesktop,
-            10000
-        );
-        return () => clearInterval(interval);
-    }, [isMobile]);
+    // useEffect(() => {
+    //     const interval = setInterval(
+    //         isMobile ? handleNextMobile : handleNextDesktop,
+    //         10000
+    //     );
+    //     return () => clearInterval(interval);
+    // }, [isMobile]);
 
     return (
         <div className="relative w-[95%] px-4 pt-4 mb-2 overflow-hidden bottom-[150px] sm:bottom-[200px]">
@@ -71,7 +73,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                     {slides.map((slide, index) => (
                         <div
                             key={index}
-                            className={`p-4 flex-shrink-0 ${isMobile ? 'w-[30%]' : 'w-[30%]'}`} 
+                            className={`p-4 flex-shrink-0 ${isMobile ? 'w-[34%]' : 'w-[30%]'}`} 
                         >
                             <div className="overflow-hidden border-b border-[#AAAAAA]">
                                 <Image
@@ -79,7 +81,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                                     alt={slide.title}
                                     className="w-full h-full object-cover rounded-lg"
                                 />
-                                <div className="p-4 h-fit sm:h-[13em]">
+                                <div className="p-4 h-fit sm:h-[14em]">
                                     <h2 className="text-lg font-bold text-[#222222]">{slide.title}</h2>
                                     <p className="text-gray-600 text-[#434343]">{slide.subtitle}</p>
                                 </div>

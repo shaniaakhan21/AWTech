@@ -11,7 +11,7 @@ const Servicecard: React.FC<ServicecardProps> = ({ imageSrc, title, subtitle }) 
     return (
         <div className="flex items-center space-x-4 p-4 bg-white shadow-none ">
             <div className="relative p-2 sm:p-4 bg-[#EDEDED] rounded-full">
-                <Image src={imageSrc} alt={title} layout="fixed"  width={96} height={96} />
+                <Image src={imageSrc} alt={title}  width={96} height={96} />
             </div>
 
             <div>

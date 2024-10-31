@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                     <Button color="inherit" className="text-[#222222]" href="/about">About</Button>
                     <Button color="inherit" className="text-[#222222]" href="/services">Services</Button>
                     <Button color="inherit" className="text-[#222222]" href="/projects">Projects</Button>
-                    <Button color="inherit" className="text-[#222222]" href="/contact">Contact</Button>
+                    {/* <Button color="inherit" className="text-[#222222]" href="/contact">Contact</Button> */}
                 </nav>
 
                 {/* Contact Section */}

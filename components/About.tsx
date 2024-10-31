@@ -49,7 +49,7 @@ const About: React.FC = () => {
                     <Servicecard
                         imageSrc={JustFour}
                         title="All-In-One Service"
-                        subtitle="Pellentesque id nibh tortor id. Quis vel eros donec ac odio tempor orci. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam."
+                        subtitle="We deliver efficient solutions tailored to each client's preferences, ensuring convenience and satisfaction with every project."
                     />
                     <div className='flex flex-row items-center p-4 sm:p-6'>
                         <div className='pr-4 w-5/12 sm:w-4/12'>

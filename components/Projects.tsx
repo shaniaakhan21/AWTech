@@ -3,29 +3,29 @@ import ReviewerImage from '../assests/images/rating.png';
 import Image from 'next/image';
 import NumText from './NumText';
 import ImgCard from './ImgCard';
-import one from '../assests/images/Gallery/one.png';
-import two from '../assests/images/Gallery/two.png';
-import three from '../assests/images/Gallery/three.png';
-import four from '../assests/images/Gallery/four.png';
-import five from '../assests/images/Gallery/five.png';
-import six from '../assests/images/Gallery/six.png';
+import one from '../assests/images/project-01.jpg';
+import two from '../assests/images/project-02.jpeg';
+import three from '../assests/images/project-03.jpeg';
+import four from '../assests/images/portfolio-04.jpeg';
+import five from '../assests/images/project-04.jpg';
+import six from '../assests/images/portfolio-05.jpeg';
 
 const Projects: React.FC = () => {
     return (
-        <div className='px-32 pt-20 pb-10 bg-[#222222] relative bottom-[100px]'>
+        <div className='px-2 pb-2 pt-4 sm:px-32 sm:pt-20 sm:pb-10 bg-[#222222] relative sm:bottom-[100px]'>
             <div>
                 <div>
-                    <h2 className='text-[#FFC527] text-sm uppercase'>Stunning Success</h2>
+                    <h2 className='text-center sm:text-start text-[#FFC527] text-sm uppercase'>Stunning Success</h2>
                 </div>
-                <div className='flex flex-row mt-2'>
-                    <div className='w-1/2'>
-                        <h1 className='text-white text-5xl font-bold mb-2 border-r border-white'>Crafting Excellence: Our Featured Projects</h1>
+                <div className='flex flex-col sm:flex-row mt-2'>
+                    <div className='w-full sm:w-1/2'>
+                        <h1 className='text-center sm:text-start text-white text-3xl sm:text-5xl font-bold mb-2 sm:border-r sm:border-white'>Crafting Excellence: Our Featured Projects</h1>
                     </div>
-                    <div className='w-1/2'>
-                        <h3 className='text-white font-light text-base ml-8'>Egestas erat lorem mollis. Nunc scelerisque viverra mauris in aliquam. Morbi non arcu risus quis.Libero enim sed faucibus turpis in eu mi. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh.
+                    <div className='w-full sm:w-1/2'>
+                        <h3 className='text-center sm:text-start text-white font-light text-[10px] sm:text-base sm:ml-8'>Our portfolio showcases projects completed with precision, quality, and dedication. From residential renovations to large-scale commercial maintenance, each project reflects our commitment to excellence and client satisfaction.
                         </h3>
                     </div>
-                    <div>
+                    <div className='flex flex-row sm:flex-col items-center sm:items-start py-4 sm:py-0 justify-center sm:justify-start'>
                         <div className="flex space-x-4">
                             <div className="flex flex-col items-center">
                                 <Image src={ReviewerImage} alt="Reviewer" className="rounded-full" />
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row justify-between items-center'>
+            <div className='flex flex-row sm:flex-row justify-center sm:justify-between items-center'>
                 <NumText title={'980+'} subtitle={'Successful Services'}/>
                 <NumText title={'900+'} subtitle={'Satisfied Clients'}/>
                 <NumText title={'450+'} subtitle={'Professionals Services'}/>
