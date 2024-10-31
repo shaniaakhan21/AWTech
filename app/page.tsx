@@ -13,7 +13,6 @@ import Why from "@/components/Why";
 export default function Home() {
   return (
     <div>
-      <TopHeader />
       <Header />
       <HeroSection
         title="LET ' S GET TO WORK"
