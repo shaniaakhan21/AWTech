@@ -41,7 +41,7 @@ const Faq: React.FC = () => {
                     <div className='bg-[#222222] p-4 rounded-2xl shadow-xl'>
                         <h1 className='text-white text-2xl pb-2'>Still You Have Doubts ?</h1>
                         <h5 className='text-[#f9f9f99c] font-extralight text-xs pb-4'>Contact us on whatsapp directly</h5>
-                        <Button className="capitalize text-sm rounded-full mr-4 w-fit px-8 py-2 bg-[#FFC527] font-semibold text-[#222222] shadow-2xl " onClick={() => window.open('https://wa.me/971557736634', '_blank')}>
+                        <Button className="custom-button capitalize text-sm rounded-full mr-4 w-fit px-8 py-2 bg-[#FFC527] font-semibold text-[#222222] shadow-2xl " onClick={() => window.open('https://wa.me/971557736634', '_blank')}>
                             Submit Your Query
                         </Button>
                     </div>

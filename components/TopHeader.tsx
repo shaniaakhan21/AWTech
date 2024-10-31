@@ -7,7 +7,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const TopHeader: React.FC = () => {
     return (
-        <AppBar className="bg-[#222222] relative">
+        <AppBar className="bg-[#222222] pos-relative bg-22-black">
             <Toolbar className="flex justify-between items-center py-2">
                 {/* Left side: Social media icons */}
                 <div className="flex space-x-2 sm:space-x-4 w-3/12 sm:w-1/2">

@@ -16,12 +16,12 @@ const Sleek: React.FC = () => {
                     <h6 className='text-[#f9f9f9b5] text-[8px] sm:text-xs font-thin'>Aliquam nulla facilisi cras fermentum odio eu Cras fermentum odio eu feugiat pretium.</h6>
                 </div>
                 <div className="flex flex-row mt-2 sm:mt-4">
-                    <Button className="text-[8px] sm:text-sm capitalize rounded-full mr-4 w-fit px-2 py-1 sm:py-2 sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
+                    <Button className="custom-button text-[8px] sm:text-sm capitalize rounded-full mr-4 w-fit px-2 py-1 sm:py-2 sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
                         onClick={() => window.open('https://wa.me/971557736634', '_blank')}
                     >
                         Get A Quote
                     </Button>
-                    <Button className="text-[8px] sm:text-sm capitalize rounded-full w-fit px-2 py-1 sm:py-2 sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl ml-2"
+                    <Button className="custom-button-white text-[8px] sm:text-sm capitalize rounded-full w-fit px-2 py-1 sm:py-2 sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl ml-2"
                         onClick={() => window.open('https://wa.me/971557736634', '_blank')}
                     >
                         Book Your Services

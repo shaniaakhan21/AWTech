@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     };
 
     return (
-        <AppBar className="bg-white shadow-none sticky">
+        <AppBar className="bg-white shadow-none pos-sticky background-white">
             <Toolbar className="flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center">
@@ -24,10 +24,10 @@ const Header: React.FC = () => {
 
                 {/* Desktop Menu */}
                 <nav className="hidden sm:flex flex-grow justify-center">
-                    <Button color="inherit" className="text-[#222222]" href="/">Home</Button>
-                    <Button color="inherit" className="text-[#222222]" href="/about">About</Button>
-                    <Button color="inherit" className="text-[#222222]" href="/services">Services</Button>
-                    <Button color="inherit" className="text-[#222222]" href="/projects">Projects</Button>
+                    <Button color="inherit" className="text-[#222222] text-22-black" href="/">Home</Button>
+                    <Button color="inherit" className="text-[#222222] text-22-black" href="/about">About</Button>
+                    <Button color="inherit" className="text-[#222222] text-22-black" href="/services">Services</Button>
+                    <Button color="inherit" className="text-[#222222] text-22-black" href="/projects">Projects</Button>
                     {/* <Button color="inherit" className="text-[#222222]" href="/contact">Contact</Button> */}
                 </nav>
 

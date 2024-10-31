@@ -65,3 +65,29 @@ body{
   padding-left: 1rem!important;
   padding-right: 1rem!important;
 }
+
+.background-white{
+  background-color: white!important;
+}
+
+.text-22-black{
+  color: #222222!important;
+}
+
+.bg-22-black{
+  background-color: #222222!important;
+}
+
+.pos-relative{
+  position: relative!important;
+}
+
+.pos-sticky{
+  position: sticky!important;
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+      display: none!important;
+  }
+}
