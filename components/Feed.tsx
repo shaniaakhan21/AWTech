@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const Feed: React.FC = () => {
@@ -28,7 +29,7 @@ const Feed: React.FC = () => {
             <div className="flex animate-scroll whitespace-nowrap">
                 {posts.map((post) => (
                     <div key={post.id} className="inline-block p-2">
-                        <img
+                        <Image
                             src={post.media_url}
                             alt={post.caption}
                             className="w-64 h-64 object-cover rounded-lg"

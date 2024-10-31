@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 import ReviewerImage from '../assests/images/rating.png';
 import CustomerReview from './CustomerReview';
-import PersonIcon from '@mui/icons-material/Person';
 
 const Reviews: React.FC = () => {
     const reviewData = [
@@ -48,7 +47,7 @@ const Reviews: React.FC = () => {
                     <div className="flex flex-row justify-start items-center mt-2">
                         <div className="flex space-x-4">
                             <div className="flex flex-col items-center">
-                            <PersonIcon className="rounded-full" style={{ fontSize: 50, color: '#FFC527' }} /> {/* MUI Person Icon */}
+                                <Image src={ReviewerImage} alt="Reviewer" className="rounded-full" />
                             </div>
                         </div>
                         <div className='flex flex-col ml-4'>

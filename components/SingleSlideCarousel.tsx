@@ -1,8 +1,6 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 
 interface CarouselSlide {
     imageSrc: StaticImageData;
