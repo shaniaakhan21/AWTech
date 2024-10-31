@@ -90,6 +90,10 @@ body{
   .sm\:hidden {
       display: none!important;
   }
+
+  .txt-8-px{
+    font-size: 7px!important;
+  }
 }
 
 .ml-02{

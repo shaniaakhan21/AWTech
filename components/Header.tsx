@@ -19,7 +19,7 @@ const Header: React.FC = () => {
             <Toolbar className="flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <Image className='w-full' src={AWLogo} alt="Logo" />
+                    <Image className='w-1/2 sm:w-full' src={AWLogo} alt="Logo" />
                 </div>
 
                 {/* Desktop Menu */}
