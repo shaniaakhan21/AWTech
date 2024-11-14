@@ -1,9 +1,11 @@
 "use client";
 import * as React from 'react';
+import { useState } from 'react';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
 import backgroundImage from '../assests/images/section-one.png';
 import ReviewerImage from '../assests/images/rating.png';
+import GetStartedPopup from './GetStartedPopup';
 
 interface HeroSectionProps {
     title: string;
@@ -12,6 +14,11 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonText2 }) => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopupClose = () => {
+        setShowPopup(false);
+    };
     return (
         <section
             className="relative bg-cover bg-center px-0 pb-0 pt-0 sm:pb-96 sm:pt-32 sm:px-32"
@@ -29,10 +36,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonTex
                 <div className="flex flex-row justify-between mb-4 sm:mb-8">
                     <div className="flex flex-row w-9/12">
                         <Button className="custom-button capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
-                        onClick={() => window.open('https://wa.me/971557736634', '_blank')}
+                        onClick={() => setShowPopup(true)}
                         >
                             {buttonText1}
                         </Button>
+                        <GetStartedPopup isOpen={showPopup} onClose={handlePopupClose} />
                         <Button className="custom-button-white capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl">
                             {buttonText2}
                         </Button>
