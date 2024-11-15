@@ -3,8 +3,12 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-body{
+body, h1, h2, h3, h4, h5, h6, p, span, input, a, button{
   font-family: 'Outfit', sans-serif;
+}
+
+.about-page .shadow-text-custom{
+  text-shadow: 1px -1px 2px #947625;
 }
 
 
