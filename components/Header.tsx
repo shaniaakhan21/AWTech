@@ -8,6 +8,7 @@ import AWLogo from '../assests/images/logo.png';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import MobileLogo from '../assests/images/phone-logo.png'
+import Link from "next/link";
 const Header: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const isMobile = useMediaQuery('(max-width: 600px)');
@@ -32,9 +33,9 @@ const Header: React.FC = () => {
             <Toolbar className="flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <a href="/">
+                    <Link href="/">
                         <Image className='w-1/4 sm:w-full' src={isMobile ? MobileLogo : AWLogo} alt="Logo" />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Desktop Menu */}
