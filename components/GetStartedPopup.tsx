@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Select, MenuItem, Button, Snackbar, Alert } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Select, MenuItem, Button } from '@mui/material';
 import { SelectChangeEvent } from '@mui/material';
 
 interface GetStartedPopupProps {
