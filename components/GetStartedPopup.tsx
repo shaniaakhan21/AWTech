@@ -63,7 +63,7 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
         e.preventDefault();
 
         // Validate required fields
-        const requiredFields = ['name', 'phone', 'email', 'service', 'projectType', 'startDate'];
+        const requiredFields = ['name', 'phone', 'email', 'service', 'projectType', 'startDate'] as (keyof typeof formData)[];
         const missingFields = requiredFields.filter(field => !formData[field] || (Array.isArray(formData[field]) && formData[field].length === 0));
 
         if (missingFields.length > 0) {
