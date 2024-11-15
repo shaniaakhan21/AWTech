@@ -20,7 +20,7 @@ const slides = [
     {
         imageSrc: Image2,
         title: "Glass & Aluminium",
-        subtitle: "The AW Technical Team is professional and experienced in the design layout, manufacture, and installation of high-quality glass and aluminum work tailored to the client's requirements.",
+        subtitle: "The Abdul Waqas Technical Team is professional and experienced in the design layout, manufacture, and installation of high-quality glass and aluminum work tailored to the client's requirements.",
     },
     {
         imageSrc: Image3,
@@ -35,7 +35,7 @@ const slides = [
     {
         imageSrc: Image5,
         title: "Fixing & Support",
-        subtitle: "AW Technical deals with a wide range of fixing and support facilities for your building. Wallpaper installation and upgrades, false ceilings, wall plastering, and fixing projects such as carpet tiles, hardwood, interlocks, and artificial grass are few among our excellent facilities.",
+        subtitle: "Abdul Waqas Technical deals with a wide range of fixing and support facilities for your building. Wallpaper installation and upgrades, false ceilings, wall plastering, and fixing projects such as carpet tiles, hardwood, interlocks, and artificial grass are few among our excellent facilities.",
     },
     {
         imageSrc: Image6,

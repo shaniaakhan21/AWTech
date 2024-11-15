@@ -27,7 +27,7 @@ const About = () => {
                         <div className='flex flex-col sm:flex-row w-full pl-4'>
                             <div className='p-2'>
                                 <p className='text-[#434343] text-xs sm:text-lg' data-aos="fade-left" data-aos-duration="1000">
-                                    At AW Technical Services, we take immense pride in offering comprehensive and reliable building maintenance and renovation solutions across Dubai, UAE. With years of experience and a proven track record of customer satisfaction, we ensure that every project, whether big or small, is executed with precision and care. Our team is committed to delivering the highest standard of service, from the initial consultation to the final result, ensuring that every detail is addressed to perfection.
+                                    At Abdul Waqas Technical Services, we take immense pride in offering comprehensive and reliable building maintenance and renovation solutions across Dubai, UAE. With years of experience and a proven track record of customer satisfaction, we ensure that every project, whether big or small, is executed with precision and care. Our team is committed to delivering the highest standard of service, from the initial consultation to the final result, ensuring that every detail is addressed to perfection.
                                 </p>
                             </div>
                             <div className='p-2'>
@@ -44,7 +44,7 @@ const About = () => {
                         <div>
                             <div className='p-2' data-aos="fade-up" data-aos-duration="1000">
                                 <h3 className='font-semibold text-2xl pb-2'>Our Mission</h3>
-                                <p className='text-[#434343] text-xs sm:text-lg'>Our mission is to meet the maintenance needs of both residential and commercial clients in Dubai, offering cost-effective, tailored solutions that align with your budget and requirements. At AW Technical Services, we prioritize customer satisfaction by delivering high-quality results that exceed expectations.</p>
+                                <p className='text-[#434343] text-xs sm:text-lg'>Our mission is to meet the maintenance needs of both residential and commercial clients in Dubai, offering cost-effective, tailored solutions that align with your budget and requirements. At Abdul Waqas Technical Services, we prioritize customer satisfaction by delivering high-quality results that exceed expectations.</p>
                             </div>
                         </div>
                         <div>

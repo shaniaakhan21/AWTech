@@ -99,7 +99,7 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
     return (
         <>
             <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm" className='rounded-full'>
-                <DialogTitle className='text-sm sm:text-lg font-bold text-start sm:text-center'>Get Started with AW Technical Services</DialogTitle>
+                <DialogTitle className='text-sm sm:text-lg font-bold text-start sm:text-center'>Get Started with Abdul Waqas Technical Services</DialogTitle>
                 <DialogContent dividers>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <TextField
