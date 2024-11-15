@@ -44,7 +44,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonTex
                     <h1 className="text-[8px] sm:text-sm">{title}</h1>
                     <h2 className="text-xl sm:text-5xl font-bold sm:mb-2 py-2">Expertised In All In <br />One Technical Services</h2>
                     <p className="text-xs sm:text-sm mb-1 sm:mb-8 w-9/12 sm:w-10/12">
-                        AW Technical Service is a committed Facilities Management company responsible for all general building management.
+                        Abdul Waqas Technical Service is a committed Facilities Management company responsible for all general building management.
                     </p>
                 </div>
 
