@@ -36,7 +36,7 @@ const Services = () => {
     return (
         <div className='service-page'>
             <Header />
-            <div className='relative top-16'>
+            <div className='relative top-20 sm:top-16'>
                 <div className='px-6 py-2 sm:px-72 sm:py-10'>
                     <h1 className='text-xl sm:text-5xl font-bold text-center mb-4 mt-6' data-aos="fade-up" data-aos-duration="1000">Our Services: Transforming Spaces, Elevating Standards</h1>
                     <p className='text-[#434343] text-xs sm:text-lg px-2 py-2 sm:px-20 sm:py-4 text-center' data-aos="fade-up" data-aos-duration="1000">
