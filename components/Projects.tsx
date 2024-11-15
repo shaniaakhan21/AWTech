@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
                 <NumText title={'980+'} subtitle={'Successful Services'} data-aos="zoom-in" data-aos-duration="1000" />
                 <NumText title={'900+'} subtitle={'Satisfied Clients'} data-aos="zoom-out" data-aos-duration="2000" />
                 <NumText title={'450+'} subtitle={'Professionals Services'} data-aos="zoom-out" data-aos-duration="2500" />
-                <NumText title={'220+'} subtitle={'Global Stores'} data-aos="zoom-in" data-aos-duration="1500" />
+                <NumText title={'220+'} subtitle={'Positive Reviews'} data-aos="zoom-in" data-aos-duration="1500" />
             </div>
 
             <div className='flex flex-row flex-wrap' data-aos="fade"
