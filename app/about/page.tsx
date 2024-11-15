@@ -20,8 +20,8 @@ const About = () => {
             <div className='relative top-16'>
                 <Image src={AboutBG} alt={'People Doing Repair work'} className='w-fit' data-aos="fade-down" data-aos-duration="1000"/>
                 <div className='m-4 sm:m-12'>
-                    <div className='sm:p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
-                        <h1 className='mt-2 text-xl sm:text-6xl font-bold sm:font-light text-center px-2 sm:px-32 text-[#FFC527] sm:shadow-text-custom'>A well-maintained space is not just a matter of function, but a reflection of care and respect.</h1>
+                    <div className=&apos;sm:p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
+                        <h1 className='mt-2 text-xl sm:text-6xl font-bold sm:font-light text-center px-2 sm:px-32 text-[#FFC527] sm:shadow-text-custom'>&quot;A well-maintained space is not just a matter of function, but a reflection of care and respect.&quot;</h1>
                     </div>
                     <div className=''>
                         <div className='flex flex-col sm:flex-row w-full pl-4'>
@@ -50,7 +50,7 @@ const About = () => {
                         <div>
                             <div className='p-2' data-aos="fade-up" data-aos-duration="1500">
                                 <h3 className='font-semibold text-2xl pb-2'>Our Plan</h3>
-                                <p className='text-[#434343] text-xs sm:text-lg'>We are committed to improving the community by providing a safe, clean, and productive environment for all. Our professional services are designed to ensure sustainable, high-quality maintenance that supports living excellence. Whether it's for residential or commercial spaces, we strive to create spaces that are not only well-maintained but also conducive to a thriving, productive atmosphere.</p>
+                                <p className='text-[#434343] text-xs sm:text-lg'>We are committed to improving the community by providing a safe, clean, and productive environment for all. Our professional services are designed to ensure sustainable, high-quality maintenance that supports living excellence. Whether it&apos;s for residential or commercial spaces, we strive to create spaces that are not only well-maintained but also conducive to a thriving, productive atmosphere.</p>
                             </div>
                         </div>
                         <div>
