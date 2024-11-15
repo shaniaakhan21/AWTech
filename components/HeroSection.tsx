@@ -36,7 +36,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, buttonText1, buttonTex
 
     return (
         <section
-            className="relative bg-cover bg-center px-0 pb-0 pt-0 sm:pb-96 sm:pt-32 sm:px-32"
+            className="relative bg-cover bg-center px-0 pb-0 pt-20 sm:pb-96 sm:pt-32 sm:px-32"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}
         >
             <div className="container w-full sm:w-1/2 pl-4 bg-[#00000045] sm:bg-transparent px-[4px] pb-20 pt-20 sm:px-0 sm:pb-0 sm:pt-0">
