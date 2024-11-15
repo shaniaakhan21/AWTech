@@ -1,11 +1,31 @@
 import { useState } from 'react';
-import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Select, MenuItem, Button } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, DialogActions, TextField, Select, MenuItem, Button, Snackbar, Alert } from '@mui/material';
 import { SelectChangeEvent } from '@mui/material';
 
 interface GetStartedPopupProps {
     isOpen: boolean;
     onClose: () => void;
 }
+
+
+const ThankYouPopup = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+    return (
+        <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm">
+            <DialogTitle className="text-center font-bold text-lg">Thank You!</DialogTitle>
+            <DialogContent>
+                <p className="text-center text-gray-700">
+                    Thank you for choosing us! Our team will get back to you with a quote soon.
+                </p>
+            </DialogContent>
+            <DialogActions className="justify-center">
+                <Button onClick={onClose} color="primary" className="capitalize bg-[#FFC527] text-[#222222]">
+                    Close
+                </Button>
+            </DialogActions>
+        </Dialog>
+    );
+};
+
 
 export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProps) {
     const [formData, setFormData] = useState({
@@ -17,6 +37,8 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
         startDate: '',
         details: '',
     });
+
+    const [isThankYouPopupOpen, setThankYouPopupOpen] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | { value: unknown }>) => {
         const target = e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
@@ -39,6 +61,16 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Validate required fields
+        const requiredFields = ['name', 'phone', 'email', 'service', 'projectType', 'startDate'];
+        const missingFields = requiredFields.filter(field => !formData[field] || (Array.isArray(formData[field]) && formData[field].length === 0));
+
+        if (missingFields.length > 0) {
+            alert('Please fill out all required fields');
+            return; // Prevent form submission if required fields are missing
+        }
+
         try {
             const response = await fetch('http://localhost:5000/api/quote-submit', {
                 method: 'POST',
@@ -49,8 +81,8 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
             });
 
             if (response.ok) {
-                alert('Form submitted successfully!');
-                onClose(); // Close the popup on successful submission
+                setThankYouPopupOpen(true); // Show Thank You Popup
+                onClose(); // Close the form popup
             } else {
                 alert('Failed to submit form');
             }
@@ -62,7 +94,7 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
 
     const nextDay = new Date();
     nextDay.setDate(nextDay.getDate() + 1);
-    const formattedNextDay = nextDay.toISOString().split('T')[0]; 
+    const formattedNextDay = nextDay.toISOString().split('T')[0];
 
     return (
         <>
@@ -190,6 +222,10 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
                     </Button>
                 </DialogActions>
             </Dialog>
+            <ThankYouPopup
+                isOpen={isThankYouPopupOpen}
+                onClose={() => setThankYouPopupOpen(false)}
+            />
         </>
     );
 }
