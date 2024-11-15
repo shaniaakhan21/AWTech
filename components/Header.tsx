@@ -1,41 +1,40 @@
 "use client";
 import React from "react";
 import { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Image from 'next/image';
 import AWLogo from '../assests/images/logo.png';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import CloseIcon from '@mui/icons-material/Close';
-
+import MobileLogo from '../assests/images/phone-logo.png'
 const Header: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const isMobile = useMediaQuery('(max-width: 600px)');
 
-
-   // Function to handle scroll and navigation
-   const handleScroll = (id: string) => {
-    if (window.location.pathname !== "/") {
-        // Navigate to homepage with the ID in the URL
-        window.location.href = `/#${id}`;
-    } else {
-        // If already on the homepage, scroll directly to the section
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    }
-};
+    // Function to handle scroll and navigation
+    const handleScroll = (id: string) => {
+        if (window.location.pathname !== "/") {
+            // Navigate to homepage with the ID in the URL
+            window.location.href = `/#${id}`;
+        } else {
+            // If already on the homepage, scroll directly to the section
+            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     const toggleDrawer = (open: boolean) => () => {
         setDrawerOpen(open);
     };
-
-
-
 
     return (
         <AppBar className="bg-white shadow-none pos-sticky background-white">
             <Toolbar className="flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <Image className='w-1/2 sm:w-full' src={AWLogo} alt="Logo" />
+                    <a href="/">
+                        <Image className='w-1/4 sm:w-full' src={isMobile ? MobileLogo : AWLogo} alt="Logo" />
+                    </a>
                 </div>
 
                 {/* Desktop Menu */}
@@ -93,7 +92,7 @@ const Header: React.FC = () => {
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton component="a" href="/projects" onClick={toggleDrawer(false)}>
+                            <ListItemButton component="a" onClick={() => { handleScroll("projects"); toggleDrawer(false); }}>
                                 <ListItemText primary="Projects" />
                             </ListItemButton>
                         </ListItem>

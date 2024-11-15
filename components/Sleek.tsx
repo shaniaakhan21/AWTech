@@ -30,13 +30,13 @@ const Sleek: React.FC = () => {
                     <h6 className='text-[#f9f9f9b5] text-[8px] sm:text-xs font-thin'>Take the first step toward transforming your space. Let us provide you with a customized quote tailored to your needs—quick, efficient, and hassle-free.</h6>
                 </div>
                 <div className="flex flex-row mt-2 sm:mt-4" data-aos="fade-left" data-aos-duration="2000">
-                    <Button className="custom-button text-[8px] sm:text-sm capitalize rounded-full mr-4 w-fit px-2 py-1 sm:py-2 sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
+                    <Button className="custom-button capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl" id="cust-btn"
                         onClick={() => setShowPopup(true)}
                     >
                         Get A Quote
                     </Button>
                     <GetStartedPopup isOpen={showPopup} onClose={handlePopupClose} />
-                    <Button className="custom-button-white text-[8px] sm:text-sm capitalize rounded-full w-fit px-2 py-1 sm:py-2 sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl ml-2"
+                    <Button className="custom-button-white capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl" id="cust-btn"
                         onClick={() => window.open('https://wa.me/971557736634', '_blank')}
                     >
                         Book Your Services

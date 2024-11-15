@@ -3,7 +3,18 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-body, h1, h2, h3, h4, h5, h6, p, span, input, a, button{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input,
+a,
+button {
   font-family: 'Outfit', sans-serif;
 }
 
@@ -11,25 +22,27 @@ html {
   scroll-behavior: smooth;
 }
 
-.about-page .shadow-text-custom{
+.about-page .shadow-text-custom {
   text-shadow: 1px -1px 2px #947625;
 }
 
 
-.MuiAccordion-heading, .MuiAccordion-root, 
+.MuiAccordion-heading,
+.MuiAccordion-root,
 .Mui-expanded:last-of-type {
-  border-radius: 1rem!important;
-  --Paper-shadow: none!important;
+  border-radius: 1rem !important;
+  --Paper-shadow: none !important;
   border: 1px solid #ADADAD;
 }
 
 .MuiAccordion-root:first-of-type {
-  border-top-left-radius: 1rem!important;
-  border-top-right-radius: 1rem!important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
 
-.Mui-expanded:first-of-type, .MuiAccordionSummary-root{
-  border-radius: 1rem!important;
+.Mui-expanded:first-of-type,
+.MuiAccordionSummary-root {
+  border-radius: 1rem !important;
 }
 
 .MuiAccordion-root::before {
@@ -37,70 +50,83 @@ html {
 }
 
 .custom-button {
-  text-transform: capitalize!important; 
-  border-radius: 9999px!important;  
-  font-size: 1.25rem!important; 
-  color: #222222!important;  
-  background-color: #FFC527!important;  
-  font-family: 'Outfit', sans-serif!important;
-  font-weight: 500!important;
-  padding: 1rem 1.2rem!important;
+  text-transform: capitalize !important;
+  border-radius: 9999px !important;
+  font-size: 1.25rem !important;
+  color: #222222 !important;
+  background-color: #FFC527 !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500 !important;
+  padding: 1rem 1.2rem !important;
 }
 
 .custom-button-white {
-  text-transform: capitalize!important; 
-  border-radius: 9999px!important;  
-  font-size: 1.25rem!important;  
-  color: #222222!important;  
-  background-color: white!important;  
-  font-family: 'Outfit', sans-serif!important;
-  font-weight: 500!important;
-  margin-left: 2%!important;
-  padding: 1rem 1.2rem!important;
+  text-transform: capitalize !important;
+  border-radius: 9999px !important;
+  font-size: 1.25rem !important;
+  color: #222222 !important;
+  background-color: white !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500 !important;
+  margin-left: 2% !important;
+  padding: 1rem 1.2rem !important;
 }
 
 .custom-button-black {
-  text-transform: capitalize!important; 
-  border-radius: 9999px!important;  
-  font-size: 1.25rem!important;  
-  color: white!important;  
-  background-color: #222222!important;  
-  font-family: 'Outfit', sans-serif!important;
-  font-weight: 500!important;
-  margin-left: 2%!important;
-  padding: 1rem 1.6rem!important;
+  text-transform: capitalize !important;
+  border-radius: 9999px !important;
+  font-size: 1.25rem !important;
+  color: white !important;
+  background-color: #222222 !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500 !important;
+  margin-left: 2% !important;
+  padding: 1rem 1.6rem !important;
 }
 
-.background-white{
-  background-color: white!important;
+.background-white {
+  background-color: white !important;
 }
 
-.text-22-black{
-  color: #222222!important;
+.text-22-black {
+  color: #222222 !important;
 }
 
-.bg-22-black{
-  background-color: #222222!important;
+.bg-22-black {
+  background-color: #222222 !important;
 }
 
-.pos-relative{
-  position: hidden!important;
+.pos-relative {
+  position: hidden !important;
 }
 
-.pos-sticky{
-  position: fixed!important;
+.pos-sticky {
+  position: fixed !important;
 }
 
 @media (min-width: 640px) {
   .sm\:hidden {
-      display: none!important;
+    display: none !important;
   }
 
-  .txt-8-px{
-    font-size: 7px!important;
+  .txt-8-px {
+    font-size: 7px !important;
+  }
+
+}
+
+@media (max-width: 640px) {
+  #cust-btn{
+    padding: 0.4rem 0.5rem !important;
+    font-size: 0.6rem !important;
+  }
+  
+  .custom-button, .custom-button-white, .custom-button-black {
+    padding: 1rem 1rem !important;
+    font-size: 1rem !important;
   }
 }
 
-.ml-02{
-margin-left: 2%!important; 
+.ml-02 {
+  margin-left: 2% !important;
 }

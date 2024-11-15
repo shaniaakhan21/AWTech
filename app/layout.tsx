@@ -1,3 +1,4 @@
+import WhatsappButton from "@/components/WhatsappButton";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,6 +11,7 @@ export default function RootLayout({
       <body
       >
         {children}
+        <WhatsappButton />
       </body>
     </html>
   );

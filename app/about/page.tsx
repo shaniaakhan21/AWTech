@@ -19,12 +19,12 @@ const About = () => {
             <Header />
             <div className='relative top-16'>
                 <Image src={AboutBG} alt={'People Doing Repair work'} className='w-fit' data-aos="fade-down" data-aos-duration="1000"/>
-                <div className='m-12'>
-                    <div className='p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
-                        <h1 className='mt-2 text-6xl font-light text-center px-32 text-[#FFC527] shadow-text-custom'>&quot;A well-maintained space is not just a matter of function, but a reflection of care and respect.&quot;</h1>
+                <div className='m-4 sm:m-12'>
+                    <div className='sm:p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
+                        <h1 className='mt-2 text-xl sm:text-6xl font-bold sm:font-light text-center px-2 sm:px-32 text-[#FFC527] sm:shadow-text-custom'>&quot;A well-maintained space is not just a matter of function, but a reflection of care and respect.&quot;</h1>
                     </div>
                     <div className=''>
-                        <div className='flex flex-row w-full pl-4'>
+                        <div className='flex flex-col sm:flex-row w-full pl-4'>
                             <div className='p-2'>
                                 <p className='text-[#434343] text-xs sm:text-lg' data-aos="fade-left" data-aos-duration="1000">
                                     At AW Technical Services, we take immense pride in offering comprehensive and reliable building maintenance and renovation solutions across Dubai, UAE. With years of experience and a proven track record of customer satisfaction, we ensure that every project, whether big or small, is executed with precision and care. Our team is committed to delivering the highest standard of service, from the initial consultation to the final result, ensuring that every detail is addressed to perfection.
@@ -37,10 +37,10 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='py-10 px-20' data-aos="fade-up" data-aos-duration="1000">
+                    <div className='py-4 px-2 sm:py-10 sm:px-20' data-aos="fade-up" data-aos-duration="1000">
                         <Image src={AboutOne} alt={'People Doing Repair work'} className='w-fit rounded-2xl shadow-lg' />
                     </div>
-                    <div className='flex flex-row bg-white p-4 rounded-2xl border-2 border-[#FFC527]'>
+                    <div className='flex flex-col sm:flex-row bg-white p-4 rounded-2xl border-2 border-[#FFC527]'>
                         <div>
                             <div className='p-2' data-aos="fade-up" data-aos-duration="1000">
                                 <h3 className='font-semibold text-2xl pb-2'>Our Mission</h3>
