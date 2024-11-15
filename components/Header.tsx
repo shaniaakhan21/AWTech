@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                     color="inherit"
                     aria-label="menu"
                     onClick={toggleDrawer(true)}
-                    className="sm:hidden text-[#222222]"
+                    className="sm:hidden text-[#222222] text-22-black"
                 >
                     <MenuIcon />
                 </IconButton>

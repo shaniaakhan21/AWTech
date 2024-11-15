@@ -104,6 +104,10 @@ html {
   position: fixed !important;
 }
 
+.green-bg{
+  background-color: #22c55e!important;
+}
+
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none !important;
@@ -120,7 +124,7 @@ html {
     padding: 0.4rem 0.5rem !important;
     font-size: 0.6rem !important;
   }
-  
+
   .custom-button, .custom-button-white, .custom-button-black {
     padding: 1rem 1rem !important;
     font-size: 1rem !important;

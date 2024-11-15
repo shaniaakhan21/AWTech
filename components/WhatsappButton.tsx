@@ -15,7 +15,7 @@ const WhatsappButton: React.FC = () => {
             <IconButton 
                 color="primary" 
                 onClick={handleClick} 
-                className="bg-green-500 text-white rounded-full shadow-lg p-3 hover:bg-green-600 transition duration-300"
+                className="green-bg text-white rounded-full shadow-lg p-3 hover:bg-green-600 transition duration-300"
             >
                 <WhatsAppIcon className="text-white text-3xl sm:text-6xl" />
             </IconButton>
