@@ -18,7 +18,7 @@ const ThankYouPopup = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
                 </p>
             </DialogContent>
             <DialogActions className="justify-center">
-                <Button onClick={onClose} color="primary" className="capitalize bg-[#FFC527] text-[#222222]">
+                <Button onClick={onClose} color="primary" className="custom-button-black capitalize rounded-full w-fit px-2 text-xs sm:text-sm sm:px-4 font-medium text-[#222222] font-medium bg-[#F9F9F9] shadow-2xl border-black">
                     Close
                 </Button>
             </DialogActions>
