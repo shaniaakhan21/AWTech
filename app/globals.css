@@ -108,6 +108,10 @@ html {
   background-color: #22c55e!important;
 }
 
+.cust-font{
+  font-size: 50px!important;
+}
+
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none !important;
@@ -126,8 +130,12 @@ html {
   }
 
   .custom-button, .custom-button-white, .custom-button-black {
-    padding: 1rem 1rem !important;
+    padding: 0.4rem 1rem!important;
     font-size: 1rem !important;
+  }
+
+  .cust-font{
+    font-size: 38px!important;
   }
 }
 

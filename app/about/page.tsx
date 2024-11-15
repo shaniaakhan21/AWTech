@@ -17,7 +17,7 @@ const About = () => {
     return (
         <div className='about-page'>
             <Header />
-            <div className='relative top-16'>
+            <div className='relative top-20 sm:top-16'>
                 <Image src={AboutBG} alt={'People Doing Repair work'} className='w-fit' data-aos="fade-down" data-aos-duration="1000"/>
                 <div className='m-4 sm:m-12'>
                     <div className='sm:p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
