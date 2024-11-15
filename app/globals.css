@@ -7,6 +7,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, input, a, button{
   font-family: 'Outfit', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .about-page .shadow-text-custom{
   text-shadow: 1px -1px 2px #947625;
 }
@@ -35,39 +39,36 @@ body, h1, h2, h3, h4, h5, h6, p, span, input, a, button{
 .custom-button {
   text-transform: capitalize!important; 
   border-radius: 9999px!important;  
-  font-size: 0.75rem!important;  
+  font-size: 1.25rem!important; 
   color: #222222!important;  
   background-color: #FFC527!important;  
   font-family: 'Outfit', sans-serif!important;
   font-weight: 500!important;
-  padding-left: 1rem!important;
-  padding-right: 1rem!important;
+  padding: 1rem 1.2rem!important;
 }
 
 .custom-button-white {
   text-transform: capitalize!important; 
   border-radius: 9999px!important;  
-  font-size: 0.75rem!important;  
+  font-size: 1.25rem!important;  
   color: #222222!important;  
   background-color: white!important;  
   font-family: 'Outfit', sans-serif!important;
   font-weight: 500!important;
   margin-left: 2%!important;
-  padding-left: 1rem!important;
-  padding-right: 1rem!important;
+  padding: 1rem 1.2rem!important;
 }
 
 .custom-button-black {
   text-transform: capitalize!important; 
   border-radius: 9999px!important;  
-  font-size: 0.75rem!important;  
+  font-size: 1.25rem!important;  
   color: white!important;  
   background-color: #222222!important;  
   font-family: 'Outfit', sans-serif!important;
   font-weight: 500!important;
   margin-left: 2%!important;
-  padding-left: 1rem!important;
-  padding-right: 1rem!important;
+  padding: 1rem 1.6rem!important;
 }
 
 .background-white{

@@ -1,5 +1,6 @@
+"use client";
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutOne from '../assests/images/about-one.png';
 import JustOne from '../assests/images/servicesCards/JustOne.png';
 import JustTwo from '../assests/images/servicesCards/JustTwo.png';
@@ -8,11 +9,22 @@ import JustFour from '../assests/images/servicesCards/JustFour.png';
 import Servicecard from './Servicecard';
 import Button from '@mui/material/Button';
 import PhoneSVG from '../assests/images/servicesCards/phone.svg';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About: React.FC = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
+    const handleClick = () => {
+        window.location.href = '/services'; // Use this for navigation
+    };
+
     return (
         <div className='px-2 pb-2 pt-4 sm:px-32 sm:pt-20 sm:pb-4'>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <h2 className='text-[#434343] text-sm text-center sm:text-start'>24/7 hassle-free</h2>
                 </div>
@@ -27,10 +39,10 @@ const About: React.FC = () => {
                 </div>
             </div>
             <div className='flex flex-col sm:flex-row justify-between w-full pt-4 sm:pt-20 sm:pb-10'>
-                <div className='w-full sm:w-1/2 p-4 sm:p-0'>
+                <div className='w-full sm:w-1/2 p-4 sm:p-0' data-aos="fade-right" data-aos-duration="1000">
                     <Image src={AboutOne} alt={'People Doing Repair work'} />
                 </div>
-                <div className='w-full sm:w-1/2'>
+                <div className='w-full sm:w-1/2' data-aos="fade-left" data-aos-duration="1000">
                     <Servicecard
                         imageSrc={JustOne}
                         title="Experienced Professionals"
@@ -53,13 +65,14 @@ const About: React.FC = () => {
                     />
                     <div className='flex flex-row items-center p-4 sm:p-6'>
                         <div className='pr-4 w-5/12 sm:w-4/12'>
-                            <Button className="custom-button-black capitalize rounded-full mr-4 w-full sm:w-fit px-2 text-xs py-2 sm:text-sm sm:px-8 bg-[#222222] font-semibold text-[#F9F9F9] shadow-2xl">
+                            <Button className="custom-button-black capitalize rounded-full mr-4 w-full sm:w-fit px-2 text-xs py-2 sm:text-sm sm:px-8 bg-[#222222] font-semibold text-[#F9F9F9] shadow-2xl"
+                                onClick={handleClick}>
                                 Read More
                             </Button>
                         </div>
                         <div className='flex flex-row items-center w-7/12 sm:w-8/12'>
                             <div className='pr-2'>
-                                <Image src={PhoneSVG} alt='phone icon'/>
+                                <Image src={PhoneSVG} alt='phone icon' />
                             </div>
                             <div>
                                 <h2 className='text-base sm:text-xl text-[#222222]'>+971 557736634</h2>

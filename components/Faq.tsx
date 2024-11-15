@@ -1,10 +1,22 @@
 "use client";
 import { Button } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import backgroundImage from '../assests/images/bg.png';
 import FAQAccordion from './FAQAccordion';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import GetStartedPopup from './GetStartedPopup';
 
 const Faq: React.FC = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopupClose = () => {
+        setShowPopup(false);
+    };
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     const faqs = [
         {
@@ -37,16 +49,19 @@ const Faq: React.FC = () => {
     return (
         <div className='px-32 pb-10 bg-white hidden sm:block relative bottom-[50px]'>
             <div className='flex flex-row w-full'>
-                <div className='w-4/12 px-10 pt-96 pb-4 bg-cover bg-center rounded-2xl' style={{ backgroundImage: `url(${backgroundImage.src})` }}>
-                    <div className='bg-[#222222] p-4 rounded-2xl shadow-xl'>
+                <div className='w-4/12 px-10 pt-96 pb-4 bg-cover bg-center rounded-2xl' style={{ backgroundImage: `url(${backgroundImage.src})` }} data-aos="fade" data-aos-duration="1000">
+                    <div className='bg-[#222222] p-4 rounded-2xl shadow-xl'  data-aos="flip-left"  data-aos-easing="ease-out-cubic"  data-aos-duration="2000">
                         <h1 className='text-white text-2xl pb-2'>Still You Have Doubts ?</h1>
                         <h5 className='text-[#f9f9f99c] font-extralight text-xs pb-4'>Contact us on whatsapp directly</h5>
-                        <Button className="custom-button capitalize text-sm rounded-full mr-4 w-fit px-8 py-2 bg-[#FFC527] font-semibold text-[#222222] shadow-2xl " onClick={() => window.open('https://wa.me/971557736634', '_blank')}>
+                        <Button className="custom-button capitalize text-sm rounded-full mr-4 w-fit px-8 py-2 bg-[#FFC527] font-semibold text-[#222222] shadow-2xl "
+                         onClick={() => setShowPopup(true)}
+                        >
                             Submit Your Query
                         </Button>
+                        <GetStartedPopup isOpen={showPopup} onClose={handlePopupClose} />
                     </div>
                 </div>
-                <div className='w-7/12 pr-4 pl-10 py-4 py-4'>
+                <div className='w-7/12 pr-4 pl-10 py-4 py-4' data-aos="fade-up"    data-aos-easing="linear" data-aos-duration="1000">
                     <h4 className='text-[#434343] font-thin uppercase'>Clear Your Every Confusion</h4>
                     <h1 className='text-[#222222] font-bold text-4xl pt-4 pb-4'>Freqently Asked Questions</h1>
                     <div>

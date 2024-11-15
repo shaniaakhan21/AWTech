@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect} from 'react';
 import Carousel from './Carousel';
 import Image1 from '../assests/images/Carousel/01.jpg';
 import Image2 from '../assests/images/Carousel/aluminius.jpg';
@@ -7,6 +8,8 @@ import Image4 from '../assests/images/Carousel/Door.jpeg';
 import Image5 from '../assests/images/Carousel/tiles.jpg';
 import Image6 from '../assests/images/Carousel/painting.jpg';
 import SingleSlideCarousel from './SingleSlideCarousel';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const slides = [
     {
@@ -42,9 +45,13 @@ const slides = [
 ];
 
 const Services: React.FC = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <><div className='px-2 pb-4 pt-4 sm:px-32 sm:pt-20 sm:pb-60 bg-[#222222]'>
-            <div className='flex flex-col sm:flex-row mt-2'>
+            <div className='flex flex-col sm:flex-row mt-2' data-aos="fade-up" data-aos-duration="1000">
                 <div className='w-full sm:w-1/2'>
                     <h1 className='text-center sm:text-start  text-white text-3xl sm:text-5xl font-bold mb-2 sm:border-r sm:border-white'>Ideal Solution For time
                         consuming problems</h1>
@@ -56,10 +63,10 @@ const Services: React.FC = () => {
             </div>
         </div>
             <div>
-                <div className='bg-[#F9F9F9] hidden sm:block flex justify-center sm:justify-end'>
+                <div className='bg-[#F9F9F9] hidden sm:block flex justify-center sm:justify-end'  data-aos="fade-left" data-aos-duration="1000">
                     <Carousel slides={slides} />
                 </div>
-                <div className='bg-[#F9F9F9] flex justify-center sm:justify-end sm:hidden'>
+                <div className='bg-[#F9F9F9] flex justify-center sm:justify-end sm:hidden'  data-aos="fade-up" data-aos-duration="1000">
                     <SingleSlideCarousel slides={slides} />
                 </div>
             </div>

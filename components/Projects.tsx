@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import ReviewerImage from '../assests/images/rating.png';
 import Image from 'next/image';
 import NumText from './NumText';
@@ -9,11 +10,17 @@ import three from '../assests/images/project-03.jpeg';
 import four from '../assests/images/portfolio-04.jpeg';
 import five from '../assests/images/project-04.jpg';
 import six from '../assests/images/portfolio-05.jpeg';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects: React.FC = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
-        <div className='px-2 pb-2 pt-4 sm:px-32 sm:pt-20 sm:pb-10 bg-[#222222] relative sm:bottom-[100px]'>
-            <div>
+        <div className='px-2 pb-2 pt-4 sm:px-32 sm:pt-20 sm:pb-10 bg-[#222222] relative sm:bottom-[100px]' id="projects">
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <h2 className='text-center sm:text-start text-[#FFC527] text-sm uppercase'>Stunning Success</h2>
                 </div>
@@ -40,19 +47,20 @@ const Projects: React.FC = () => {
             </div>
 
             <div className='flex flex-row sm:flex-row justify-center sm:justify-between items-center'>
-                <NumText title={'980+'} subtitle={'Successful Services'}/>
-                <NumText title={'900+'} subtitle={'Satisfied Clients'}/>
-                <NumText title={'450+'} subtitle={'Professionals Services'}/>
-                <NumText title={'220+'} subtitle={'Global Stores'}/>
+                <NumText title={'980+'} subtitle={'Successful Services'} data-aos="zoom-in" data-aos-duration="1000" />
+                <NumText title={'900+'} subtitle={'Satisfied Clients'} data-aos="zoom-out" data-aos-duration="2000" />
+                <NumText title={'450+'} subtitle={'Professionals Services'} data-aos="zoom-out" data-aos-duration="2500" />
+                <NumText title={'220+'} subtitle={'Global Stores'} data-aos="zoom-in" data-aos-duration="1500" />
             </div>
 
-            <div className='flex flex-row flex-wrap'>
-                <ImgCard src={one}/>
-                <ImgCard src={two}/>
-                <ImgCard src={three}/>
-                <ImgCard src={four}/>
-                <ImgCard src={five}/>
-                <ImgCard src={six}/>
+            <div className='flex flex-row flex-wrap' data-aos="fade"
+                data-aos-duration="2000">
+                <ImgCard src={one} />
+                <ImgCard src={two} />
+                <ImgCard src={three} />
+                <ImgCard src={four} />
+                <ImgCard src={five} />
+                <ImgCard src={six} />
             </div>
         </div>
     );

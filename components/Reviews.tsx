@@ -1,9 +1,17 @@
+"use client";
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReviewerImage from '../assests/images/rating.png';
 import CustomerReview from './CustomerReview';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Reviews: React.FC = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     const reviewData = [
         {
             stars: 5,
@@ -35,7 +43,7 @@ const Reviews: React.FC = () => {
     ];
     return (
         <div className='px-10 py-8 sm:px-32 sm:py-20 bg-white'>
-            <div className='flex flex-col sm:flex-row justify-between items-center w-full'>
+            <div className='flex flex-col sm:flex-row justify-between items-center w-full' data-aos="fade-up" data-aos-duration="1000">
                 <div className='w-full sm:w-1/2'>
                     <h4 className='text-[#434343] font-thin uppercase text-xs sm:text-sm'>Our Clients Reviews</h4>
                     <h1 className='text-[#222222] font-bold text-2xl sm:text-4xl pt-4 pb-4'>Happy Customers</h1>

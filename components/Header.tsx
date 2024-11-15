@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from 'react';
+import React from "react";
+import { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Image from 'next/image';
@@ -10,9 +11,24 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
 
+
+   // Function to handle scroll and navigation
+   const handleScroll = (id: string) => {
+    if (window.location.pathname !== "/") {
+        // Navigate to homepage with the ID in the URL
+        window.location.href = `/#${id}`;
+    } else {
+        // If already on the homepage, scroll directly to the section
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+};
+
     const toggleDrawer = (open: boolean) => () => {
         setDrawerOpen(open);
     };
+
+
+
 
     return (
         <AppBar className="bg-white shadow-none pos-sticky background-white">
@@ -27,7 +43,7 @@ const Header: React.FC = () => {
                     <Button color="inherit" className="text-[#222222] text-22-black" href="/">Home</Button>
                     <Button color="inherit" className="text-[#222222] text-22-black" href="/about">About</Button>
                     <Button color="inherit" className="text-[#222222] text-22-black" href="/services">Services</Button>
-                    <Button color="inherit" className="text-[#222222] text-22-black" href="/projects">Projects</Button>
+                    <Button color="inherit" className="text-[#222222] text-22-black" onClick={() => handleScroll("projects")}>Projects</Button>
                     {/* <Button color="inherit" className="text-[#222222]" href="/contact">Contact</Button> */}
                 </nav>
 

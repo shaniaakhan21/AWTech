@@ -38,7 +38,7 @@ const CustomerReview: React.FC<CustomerReviewProps> = ({ reviews }) => {
     const { stars, text, name, designation } = reviews[currentIndex];
 
     return (
-        <div className="flex items-center justify-between py-10">
+        <div className="flex items-center justify-between py-10 border border-[#FFC527] rounded-2xl px-10 mt-6">
             <div className="w-full">
                 {Array.from({ length: stars }, (_, index) => (
                     <StarIcon sx={{ color: '#FFC527' }} key={index} />

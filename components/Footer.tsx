@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import Clock from '../assests/images/clock.png';
@@ -7,6 +8,17 @@ import EmailIcon from '@mui/icons-material/Email';
 import LightLogo from '../assests/images/logo-light.png';
 
 const Footer: React.FC = () => {
+       // Function to handle scroll and navigation
+   const handleScroll = (id: string) => {
+    if (window.location.pathname !== "/") {
+        // Navigate to homepage with the ID in the URL
+        window.location.href = `/#${id}`;
+    } else {
+        // If already on the homepage, scroll directly to the section
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+};
+
     return (
         <footer className="bg-[#222222] text-[#F9F9F9] px-10 py-8 sm:px-32 sm:py-10">
             <div className="flex flex-col sm:flex-row justify-between">
@@ -41,10 +53,10 @@ const Footer: React.FC = () => {
                     <div className="w-full sm:w-1/6">
                         <h4 className="text-yellow-500 font-semibold sm:mb-4">Links</h4>
                         <ul className="flex flex-col space-y-2">
-                            <li><a href="#" className="hover:text-yellow-500 text-xs sm:text-sm">About Us</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 text-xs sm:text-sm">Services</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 text-xs sm:text-sm">Our Projects</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 text-xs sm:text-sm">Contact Us</a></li>
+                            <li><a href="/about" className="hover:text-yellow-500 text-xs sm:text-sm">About Us</a></li>
+                            <li><a href="/services" className="hover:text-yellow-500 text-xs sm:text-sm">Services</a></li>
+                            <li><button onClick={() => handleScroll("projects")} className="hover:text-yellow-500 text-xs sm:text-sm">Our Projects</button></li>
+                            <li><a onClick={() => window.open('https://wa.me/971557736634', '_blank')} className="hover:text-yellow-500 text-xs sm:text-sm">Contact Us</a></li>
                         </ul>
                     </div>
 
