@@ -72,7 +72,7 @@ export default function GetStartedPopup({ isOpen, onClose }: GetStartedPopupProp
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/quote-submit', {
+            const response = await fetch('https://awtech-backend.onrender.com/api/quote-submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
