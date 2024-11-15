@@ -21,7 +21,7 @@ const About = () => {
                 <Image src={AboutBG} alt={'People Doing Repair work'} className='w-fit' data-aos="fade-down" data-aos-duration="1000"/>
                 <div className='m-4 sm:m-12'>
                     <div className='sm:p-2 mb-6' data-aos="fade-up" data-aos-duration="1000">
-                        <h1 className='mt-2 text-xl sm:text-6xl font-bold sm:font-light text-center px-2 sm:px-32 text-[#FFC527] sm:shadow-text-custom'>"A well-maintained space is not just a matter of function, but a reflection of care and respect."</h1>
+                        <h1 className='mt-2 text-xl sm:text-6xl font-bold sm:font-light text-center px-2 sm:px-32 text-[#FFC527] sm:shadow-text-custom'>A well-maintained space is not just a matter of function, but a reflection of care and respect.</h1>
                     </div>
                     <div className=''>
                         <div className='flex flex-col sm:flex-row w-full pl-4'>
