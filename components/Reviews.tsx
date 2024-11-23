@@ -36,8 +36,65 @@ const Reviews: React.FC = () => {
 
         {
             stars: 5,
-            text: "Hi all this is good company they doing our home panting job that's good and cheepar then other.Amazing service! Highly recommended.",
+            text: "Do your home mantinace work with Aw technical services thy will be do good job our villa spring",
+            name: "Sea Andsand",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "The company is good nice staff and thy are cheep then other",
+            name: "Jonalyn Caballero",
+            designation: "Customer",
+        },
+
+        {
+            stars: 5,
+            text: "Excellent service and always on time.",
+            name: "Richard Rodrigues",
+            designation: "Customer",
+        },
+
+        {
+            stars: 5,
+            text: "Full waterproofing of my Villa done with excellent outcome. Communication was easy via whatsapp and workers adapted to the sleeping schedule of my baby as well. Easy to recommend them 👍",
+            name: "T B",
+            designation: "Customer",
+        },
+
+        {
+            stars: 5,
+            text: "Good service, well done.. they dealt with plant removal, water leaks, patch and paint work, and pipes!! Thank you so much!!",
+            name: "J",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "hi all this is good company they doing our home panting job that's good and cheepar then other",
             name: "Kimverly Timtim",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "Hi evry one i have good expirance this company do work with him and good quality",
+            name: "Mohammad Mohiuddin",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "I have good experience this company they are reliable and good experience Staff also nice good communication good experience nice one",
+            name: "Khurram Sarwar",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "Very very good team work. Hard work technicians. Gives very satisfactory results.",
+            name: "Devesh Sharma",
+            designation: "Customer",
+        },
+        {
+            stars: 5,
+            text: "Very good service...and affordable .....do with work all kind off technical services",
+            name: "Niyas N",
             designation: "Customer",
         },
     ];

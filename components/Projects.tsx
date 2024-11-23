@@ -4,12 +4,12 @@ import ReviewerImage from '../assests/images/rating.png';
 import Image from 'next/image';
 import NumText from './NumText';
 import ImgCard from './ImgCard';
-import one from '../assests/images/project-01.jpg';
+import one from '../assests/images/project-01.jpeg';
 import two from '../assests/images/project-02.jpeg';
 import three from '../assests/images/project-03.jpeg';
-import four from '../assests/images/portfolio-04.jpeg';
-import five from '../assests/images/project-04.jpg';
-import six from '../assests/images/portfolio-05.jpeg';
+import four from '../assests/images/project-04.jpeg';
+import five from '../assests/images/portfolio-05.jpeg';
+import six from '../assests/images/project-06.jpeg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
