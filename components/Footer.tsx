@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
 
             {/* Footer Bottom Section */}
             <div className="flex justify-between items-center mt-10 border-t border-[#f9f9f994] pt-4">
-                <p className="text-[8px] sm:text-sm">© Abdul Waqas Technical Services, All Right Reserved.</p>
+                <p className="text-[8px] sm:text-sm">© Abdul Waqas Technical Services LLC, All Right Reserved.</p>
                 <a href="#" className="text-[8px] sm:text-sm hover:text-yellow-500">Privacy Policy</a>
             </div>
         </footer>

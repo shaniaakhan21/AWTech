@@ -40,7 +40,7 @@ const Services = () => {
                 <div className='px-6 py-2 sm:px-72 sm:py-10'>
                     <h1 className='text-xl sm:text-5xl font-bold text-center mb-4 mt-6' data-aos="fade-up" data-aos-duration="1000">Our Services: Transforming Spaces, Elevating Standards</h1>
                     <p className='text-[#434343] text-xs sm:text-lg px-2 py-2 sm:px-20 sm:py-4 text-center' data-aos="fade-up" data-aos-duration="1000">
-                        At Abdul Waqas Technical Services, we specialize in comprehensive building maintenance and renovation solutions tailored to your unique needs. Our diverse range of services ensures excellence, efficiency, and elegance in every project we undertake.
+                        At Abdul Waqas Technical Services LLC, we specialize in comprehensive building maintenance and renovation solutions tailored to your unique needs. Our diverse range of services ensures excellence, efficiency, and elegance in every project we undertake.
                     </p>
                     <div className="flex flex-row justify-center" data-aos="fade-up" data-aos-duration="1000">
                         <Button className="custom-button capitalize rounded-full mr-4 w-fit px-2 text-xs sm:text-sm sm:px-4 text-[#222222] font-medium bg-[#FFC527] shadow-2xl"
@@ -67,7 +67,7 @@ const Services = () => {
                             data-aos="flip-left" data-aos-duration="2000"
                             imageSrc={HomeRepairService}
                             title="Glass & Aluminium"
-                            description="At Abdul Waqas Technical Services, we excel in creating bespoke glass and aluminum solutions that blend style with durability. Our experienced team handles everything from design conceptualization to precision installation, offering custom layouts, high-quality finishes, and exceptional craftsmanship. Whether it's a residential upgrade or a commercial project, we bring your vision to life with unparalleled attention to detail."
+                            description="At Abdul Waqas Technical Services LLC, we excel in creating bespoke glass and aluminum solutions that blend style with durability. Our experienced team handles everything from design conceptualization to precision installation, offering custom layouts, high-quality finishes, and exceptional craftsmanship. Whether it's a residential upgrade or a commercial project, we bring your vision to life with unparalleled attention to detail."
                         />
                         <ServiceBox
                             className='relative sm:top-20'

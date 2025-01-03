@@ -27,12 +27,12 @@ const About = () => {
                         <div className='flex flex-col sm:flex-row w-full pl-4'>
                             <div className='p-2'>
                                 <p className='text-[#434343] text-xs sm:text-lg' data-aos="fade-left" data-aos-duration="1000">
-                                    At Abdul Waqas Technical Services, we take immense pride in offering comprehensive and reliable building maintenance and renovation solutions across Dubai, UAE. With years of experience and a proven track record of customer satisfaction, we ensure that every project, whether big or small, is executed with precision and care. Our team is committed to delivering the highest standard of service, from the initial consultation to the final result, ensuring that every detail is addressed to perfection.
+                                    At Abdul Waqas Technical Services LLC, we take immense pride in offering comprehensive and reliable building maintenance and renovation solutions across Dubai, UAE. With years of experience and a proven track record of customer satisfaction, we ensure that every project, whether big or small, is executed with precision and care. Our team is committed to delivering the highest standard of service, from the initial consultation to the final result, ensuring that every detail is addressed to perfection.
                                 </p>
                             </div>
                             <div className='p-2'>
                                 <p className='text-[#434343] text-xs sm:text-lg' data-aos="fade-right" data-aos-duration="1000">
-                                    Abdul Waqas Technical Services is a leading Facilities Management company specializing in all aspects of general building management and maintenance. We are dedicated to handling any maintenance task, no matter the size or complexity, at any given time. Our skilled team oversees a wide range of services, including masonry, electrical work, plumbing, painting, gardening, villa and building renovations, and more. We pride ourselves on offering a complete suite of services to address every need, making us your trusted partner for all property management and redevelopment projects.
+                                    Abdul waqas technical services LLC is a leading Facilities Management company specializing in all aspects of general building management and maintenance. We are dedicated to handling any maintenance task, no matter the size or complexity, at any given time. Our skilled team oversees a wide range of services, including masonry, electrical work, plumbing, painting, gardening, villa and building renovations, and more. We pride ourselves on offering a complete suite of services to address every need, making us your trusted partner for all property management and redevelopment projects.
                                 </p>
                             </div>
                         </div>
